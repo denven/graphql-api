@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+
+main {
+	display: flex;
+	height: calc(100vh - 100px);
+	.books {
+		width: 50%;
+		padding: 20px;
+		background-color: #eee;
+
+		table {
+			text-align: left;
+		}
+		thead th:nth-child(1) {
+			width: 30px;
+		}
+
+		thead th:nth-child(2) {
+			width: 350px;
+		}
+
+		thead th:nth-child(3) {
+			width: 100px;
+		}
+
+		tr td:nth-child(1) {
+			width: 30px;
+		}
+
+		tr td:nth-child(2) {
+			width: 350px;
+		}
+
+		tr td:nth-child(1) {
+			width: 100px;
+		}
+	}
+	.details {
+		flex: 1;
+		padding: 20px;
+		background-color: #ccc;
+	}
+}
